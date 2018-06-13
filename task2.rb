@@ -14,7 +14,7 @@ def minRotation(str1, str2)
       return -1
     end
   else
-    if ((i+1) > str1.size/2.to_i)
+    if ((i) > str1.size/2.to_i)
       j = str1.size-i
     else
       j = i
