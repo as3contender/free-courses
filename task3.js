@@ -8,8 +8,6 @@ function getType(t) {
   type 2 = {5-20}
   */
   
-  let k = 0;
-  
   if (t>10) {
     t = t%100;
   } else {
@@ -67,7 +65,8 @@ function getSum(t1, t2) {
   let m = Math.floor((st-h*3600)/60);
   let s = Math.floor(st-h*3600-m*60);
   
-  return  getHours(h)+getMinutes(m)+getSeconds(s)+'\b';
+  let str = getHours(h)+getMinutes(m)+getSeconds(s);
+  return  str.slice(0,-1);
   
 }
 
