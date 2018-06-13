@@ -19,9 +19,9 @@ def minRotation(str1, str2)
     else
       j = i
     end
-	puts i
+
     str3 = str2[i,str2.size] + str2[0,i];
-    puts str3
+
     if (str1 == str3)
       return j
     else
